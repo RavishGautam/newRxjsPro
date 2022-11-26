@@ -1,3 +1,7 @@
+import { ReplaySubjectComponent } from './observables/replay-subject/replay-subject.component';
+import { SubjectComponent } from './observables/subject/subject.component';
+import { DtimeDChangeComponent } from './observables/dtime-d-change/dtime-d-change.component';
+import { RetryComponent } from './observables/retry/retry.component';
 import { TakeComponent } from './observables/take/take.component';
 import { TapComponent } from './observables/tap/tap.component';
 import { FilterComponent } from './observables/filter/filter.component';
@@ -14,6 +18,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { FromEventComponent } from './observables/from-event/from-event.component';
 import { IntervalComponent } from './observables/interval/interval.component';
 import { OfFromComponent } from './observables/of-from/of-from.component';
+import { ConcatComponent } from './observables/concat/concat.component';
+import { MergeComponent } from './observables/merge/merge.component';
+import { MergeMapComponent } from './observables/merge-map/merge-map.component';
 
 const routes: Routes = [
   {path:'promises', component:PromisesComponent},
@@ -29,6 +36,13 @@ const routes: Routes = [
     {path:'filter', component:FilterComponent},
     {path:'tap', component:TapComponent},
     {path:'take', component:TakeComponent},
+    {path:'retry', component:RetryComponent},
+    {path:'dTime-dChange', component:DtimeDChangeComponent},
+    {path:'subject', component:SubjectComponent},
+    {path:'replay-subject', component:ReplaySubjectComponent},
+    {path:'concat', component:ConcatComponent},
+    {path:'merge', component:MergeComponent},
+    {path:'merge-map', component:MergeMapComponent},
   ]}
   
 ];

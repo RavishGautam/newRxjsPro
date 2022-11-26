@@ -1,0 +1,146 @@
+<div class="my-3">
+    <h2>Retry / RetryWhen  / Scan / Delay  </h2>
+
+<hr>
+
+<div class="row">
+    <!-- Example -01 (retry) -->
+    <div class="col-md-4">
+        <table class="table" *ngIf="person != null">
+            <tbody>
+            <tr>
+                <th>Id</th> 
+                <td>{{person.id}}</td>   
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{person.name}}</td>   
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{person.gender}}</td>   
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <td>{{person.skill}}</td>   
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{person.phone}}</td>   
+            </tr>
+            <tr>
+                <th>Email</th> 
+                <td>{{person.email}}</td>   
+            </tr>
+        </tbody>
+        </table>
+        <br><br>
+        <button class="btn btn-primary" type="button" (click)="getUserData()" >
+            <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            {{fetching ? 'Fetching...' : 'Fetch Details'}}
+            
+          </button>
+          <br>
+          <br>
+          
+          <p>Status : <strong [ngClass]="{
+            'text-success' : status =='Data Fetched' ,
+            'text-danger' : status =='Problem in fetching data' }">
+            {{status}}</strong></p>
+    </div>
+
+     <!-- Example -02 (retryWhen) -->
+     <div class="col-md-4">
+        <table class="table" *ngIf="person2 != null">
+            <tbody>
+            <tr>
+                <th>Id</th> 
+                <td>{{person2.id}}</td>   
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{person2.name}}</td>   
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{person2.gender}}</td>   
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <td>{{person2.skill}}</td>   
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{person2.phone}}</td>   
+            </tr>
+            <tr>
+                <th>Email</th> 
+                <td>{{person2.email}}</td>   
+            </tr>
+        </tbody>
+        </table>
+        <br><br>
+        <button class="btn btn-primary" type="button" (click)="getUserData2()" >
+            <span *ngIf="fetching2" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            {{fetching2 ? 'Fetching...' : 'Fetch Details'}}
+            
+          </button>
+          <br>
+          <br>
+          
+          <p>Status : <strong [ngClass]="{
+            'text-success' : status2 =='Data Fetched' ,
+            'text-danger' : status2 =='Problem in fetching data',
+            'text-info' : status2 =='Retry' }">
+            {{status2}}</strong></p>
+    </div>
+
+    <!-- Example -03 (retryWhen) -->
+    <div class="col-md-4">
+        <table class="table" *ngIf="person != null">
+            <tbody>
+            <tr>
+                <th>Id</th> 
+                <td>{{person.id}}</td>   
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{person.name}}</td>   
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>{{person.gender}}</td>   
+            </tr>
+            <tr>
+                <th>Skill</th>
+                <td>{{person.skill}}</td>   
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{person.phone}}</td>   
+            </tr>
+            <tr>
+                <th>Email</th> 
+                <td>{{person.email}}</td>   
+            </tr>
+        </tbody>
+        </table>
+        <br><br>
+        <button class="btn btn-primary" type="button" (click)="getUserData()" >
+            <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            {{fetching ? 'Fetching...' : 'Fetch Details'}}
+            
+          </button>
+          <br>
+          <br>
+          
+          <p>Status : <strong [ngClass]="{
+            'text-success' : status =='Data Fetched' ,
+            'text-danger' : status =='Problem in fetching data' }">
+            {{status}}</strong></p>
+    </div>
+
+
+</div>
+
+</div>

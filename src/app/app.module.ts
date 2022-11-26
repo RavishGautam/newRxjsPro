@@ -1,3 +1,4 @@
+import {ReplaySubjectComponent} from './observables/replay-subject/replay-subject.component'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +19,16 @@ import { PluckComponent } from './observables/pluck/pluck.component';
 import { FilterComponent } from './observables/filter/filter.component';
 import { TapComponent } from './observables/tap/tap.component';
 import { TakeComponent } from './observables/take/take.component';
-
+import { RetryComponent } from './observables/retry/retry.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DtimeDChangeComponent } from './observables/dtime-d-change/dtime-d-change.component';
+import { SubjectComponent } from './observables/subject/subject.component';
+import { Comp1Component } from './comps/comp1/comp1.component';
+import { Comp2Component } from './comps/comp2/comp2.component';
+import { Comp3Component } from './comps/comp3/comp3.component';
+import { ConcatComponent } from './observables/concat/concat.component';
+import { MergeComponent } from './observables/merge/merge.component';
+import { MergeMapComponent } from './observables/merge-map/merge-map.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,12 +45,25 @@ import { TakeComponent } from './observables/take/take.component';
     PluckComponent,
     FilterComponent,
     TapComponent,
-    TakeComponent
+    TakeComponent,
+    RetryComponent,
+    DtimeDChangeComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    ReplaySubjectComponent,
+    ConcatComponent,
+    MergeComponent,
+    MergeMapComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

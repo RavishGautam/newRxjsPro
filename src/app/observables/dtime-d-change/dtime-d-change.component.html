@@ -1,0 +1,44 @@
+<span class="progress-bar bg-success" role="progressbar" [ngStyle]="{'width':progressValue1+'%'}" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span>     
+<div class="my-3">
+    <h2>DebounceTime & DistinctUntilChanged</h2>
+   
+
+<hr>
+
+<div class="row">
+    <div class="col-md-6">
+        <strong>Ex - 01 : <span class="text-primary">DebounceTime</span></strong>
+       
+        <hr>
+        <!-- <span class="progress-bar bg-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></span> -->
+        
+        <form>
+          
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Search</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control"  placeholder="Search..." #myInput>
+            </div>
+          </div>
+        </form>
+        <br><br>
+        <span *ngIf="searchData1 != null">Requested Data : <strong class="text-success">{{searchData1}}</strong></span>
+    </div>
+
+    <div class="col-md-6">
+        <strong>Ex - 02 :<span class="text-danger"> DistinctUntilChanged</span></strong>
+        <hr>
+        <form>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Search</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control"  placeholder="Search..." #myInput2>
+                </div>
+              </div>
+            </form>
+            <br><br>
+            <span *ngIf="searchData2 != null">Requested Data : <strong class="text-success">{{searchData2}}</strong></span>
+    </div>
+</div>
+</div>
+

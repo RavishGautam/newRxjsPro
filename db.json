@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": 
+    {
+      "id": 1,
+      "name": "Jhon",
+      "gender": "male",
+      "skill" : "Angular ",
+      "phone" : "9887877767",
+      "email" : "Jhon12@mail.com"
+    },
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

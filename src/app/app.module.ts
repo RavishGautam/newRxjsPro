@@ -29,6 +29,12 @@ import { Comp3Component } from './comps/comp3/comp3.component';
 import { ConcatComponent } from './observables/concat/concat.component';
 import { MergeComponent } from './observables/merge/merge.component';
 import { MergeMapComponent } from './observables/merge-map/merge-map.component';
+import { ConcatMapComponent } from './observables/concat-map/concat-map.component';
+import { SwitchMapComponent } from './observables/switch-map/switch-map.component';
+import { SwitchMap2Component } from './observables/switch-map2/switch-map2.component';
+import { ExhaustMapComponent } from './observables/exhaust-map/exhaust-map.component';
+import { Example1Component } from './observables/example1/example1.component';
+import { ForkJoinComponent } from './observables/fork-join/fork-join.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +62,12 @@ import { MergeMapComponent } from './observables/merge-map/merge-map.component';
     ConcatComponent,
     MergeComponent,
     MergeMapComponent,
+    ConcatMapComponent,
+    SwitchMapComponent,
+    SwitchMap2Component,
+    ExhaustMapComponent,
+    Example1Component,
+    ForkJoinComponent,
     
   ],
   imports: [

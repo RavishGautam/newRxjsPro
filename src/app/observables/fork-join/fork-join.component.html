@@ -1,0 +1,37 @@
+<div class="my-3">
+    <h2>Zip & Fork Join</h2>
+
+    <br><hr>
+
+    <div class="row">
+        <div class="col-md-3 pr-4">
+            <strong>Names</strong>
+            <hr>
+            <select class="form-select" aria-label="Default select example" #names>
+                <option *ngFor="let name of person" value="{{name}}">{{name}}</option>
+              </select>
+           <br><br>
+            <strong>Colors</strong>
+            <hr>
+            <select class="form-select" aria-label="Default select example" #colors>
+                <option *ngFor="let color of colorSet" value="{{color}}">{{color}}</option>
+              </select>
+            
+           
+        </div>
+
+        <div class="col-md-9 pr-4">
+            <strong>Zip</strong>
+            <hr>
+           <div class="wrapper" id="elcontainer">
+            <div class="blue">Shona</div>
+           </div>
+            <br><br>
+            <strong>Fork Join</strong>
+            <hr>
+            <div class="wrapper" id="elcontainer2">
+
+        </div>
+    </div>
+    </div>
+

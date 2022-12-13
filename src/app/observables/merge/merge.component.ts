@@ -15,9 +15,9 @@ export class MergeComponent implements OnInit {
   ngOnInit(): void {
 
     const sourceTech = interval(3000).pipe(map(v=> 'Tech Video #'+(v+1)),take(5))
-    // sourceTech.subscribe((res:any)=>{
-    //   console.log("res1-->",res)
-    // })
+    sourceTech.subscribe((res:any)=>{
+      console.log("res1-->",res)
+    })
 
     const sourceComedy = interval(4500).pipe(map(v=> 'Comedy Video #'+(v+1)),take(3))
     // sourceComedy.subscribe((res:any)=>{

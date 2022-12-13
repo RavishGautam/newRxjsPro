@@ -6,45 +6,7 @@
       "author": "typicode"
     }
   ],
-  "empId": [1,3, 5, 4, 2],
-  "empDetails": [
-    {
-      "id": 1,
-      "name": "Ram"
-    },
-    {
-      "id": 2,
-      "name": "Mohan"
-    },
-    {
-      "id": 3,
-      "name": "Shyam"
-    },
-    {
-      "id": 4,
-      "name": "Rishabh"
-    },
-    {
-      "id": 5,
-      "name": "Rohan"
-    },
-    {
-      "id": 6,
-      "name": "Kabir"
-    }
-  ],
-  "clicks": {
-    "data": 2
-  },
-  "users": {
-    "id": 1,
-    "name": "Jhon",
-    "gender": "male",
-    "skill": "Angular ",
-    "phone": "9887877767",
-    "email": "Jhon12@mail.com"
-  },
-  "apiDatas": [
+  "apiDatas":[
     {
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
@@ -58,6 +20,7 @@
       "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
     },
     {
+      
       "title": "Mens Cotton Jacket",
       "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
       "category": "men's clothing",
@@ -70,6 +33,7 @@
       "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
     },
     {
+      
       "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
       "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
       "category": "jewelery",
@@ -125,6 +89,7 @@
     },
     {
       "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+     
       "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
       "category": "electronics",
       "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"

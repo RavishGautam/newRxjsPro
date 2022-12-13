@@ -44,7 +44,7 @@ obsMsg:any;
     })
 
 
-    /// prom promoise
+    /// from promoise
 
 
     const  promise = new Promise((resolve)=>{

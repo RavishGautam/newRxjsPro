@@ -27,3 +27,43 @@
     border-color: green;
 
 }
+
+.wrapper{
+    display: flex;
+
+    div{
+        margin-right: 10px;
+        border: 1px solid;
+        min-width: 50px;
+        width: auto;
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .red{
+        background: red;
+    }
+    .blue{
+        background: blue;
+    }
+    .yellow{
+        background: yellow;
+    }
+    .pink{
+        background: pink;
+    }
+    .brown{
+        background: brown;
+    }
+    .purple{
+        background: purple;
+    }
+    
+    .orange{
+        background: orange;
+    }
+    .green{
+        background: green;
+    }
+}
